@@ -5,12 +5,13 @@ import Base from "../../layouts/Base.astro";
 // const projects = await getProjects(6)
 
 const title = "Ben Margolius • Resume";
+const bannerText = encodeURIComponent("bencodes.dev")
 ---
 
 <Base
   {title}
   description="Personal website and blog of Ben Margolius"
-  image="https://og.nxl.sh/home"
+  image={`https://embed-image.vercel.app/api/blog/1?title=${title}&top=${bannerText}`}
 >
   <h1 slot="header-content" class="text-neutral-500">
     Ben Margolius
