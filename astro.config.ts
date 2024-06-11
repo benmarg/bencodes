@@ -10,7 +10,11 @@ import vesper from "./src/lib/vesper.json";
 
 export default defineConfig({
   site: "https://www.bencode.dev",
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   output: "hybrid",
   integrations: [
     mdx(),
