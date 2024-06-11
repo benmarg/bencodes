@@ -13,12 +13,13 @@ const posts = sortPostsByDate(
 ).slice(0, 4)
 
 const title = "Ben Margolius • Home";
+const bannerText = encodeURIComponent("bencodes.dev")
 ---
 
 <Base
   {title}
   description="Personal website and blog of Ben Margolius"
-  image="https://og.nxl.sh/home"
+  image={`https://embed-image.vercel.app/api/blog/1?title=${title}&top=${bannerText}`}
 >
   <h1 slot="header-content" class="text-neutral-500">
     Ben Margolius
