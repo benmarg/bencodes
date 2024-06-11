@@ -1,4 +1,4 @@
-personal website and blog of Ben Margolius. Inspired by [nexxel](https://www.nexxel.dev/).
+personal website and blog of Ben Margolius. Inspired by [nexxel](https://github.com/nexxeln/).
 
 **tech stack**
 
